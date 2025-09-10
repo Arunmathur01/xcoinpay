@@ -21,6 +21,7 @@ function AppContent() {
   const location = useLocation();
   const isSignInPage = location.pathname === '/signin';
   const isKYCPage = location.pathname === '/kyc';
+  const isAdminPage = location.pathname === '/admin';
 
   return (
     <div className="App">
@@ -35,7 +36,7 @@ function AppContent() {
         <Route path="/history" element={<History />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
-      {!isSignInPage && !isKYCPage && <Footer />}
+      {!isSignInPage && !isKYCPage && !isAdminPage && <Footer />}
     </div>
   );
 }
