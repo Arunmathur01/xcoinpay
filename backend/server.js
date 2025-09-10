@@ -9,7 +9,14 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://xcoinpay-frontend.onrender.com',
+    'https://xcoinpay.onrender.com'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // MongoDB Connection (supports MONGO_URI preferred, fallback to MONGODB_URI)
