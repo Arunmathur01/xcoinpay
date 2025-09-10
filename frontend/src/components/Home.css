@@ -1,0 +1,639 @@
+.home {
+  min-height: 100vh;
+}
+
+.features {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%2300c896" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%2300c896" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%2300c896" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="%2300c896" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="%2300c896" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #0a2540;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00c896, #0a2540);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+
+.features h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00c896, #0a2540);
+  border-radius: 2px;
+}
+
+.features ul {
+  max-width: 900px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.features li {
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  position: relative;
+  padding-left: 3.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #00c896;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.features li:hover {
+  transform: translateX(10px) translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 200, 150, 0.2);
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.features li:before {
+  content: "🚀";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.features li:nth-child(1):before { content: "⚡"; }
+.features li:nth-child(2):before { content: "🔥"; }
+.features li:nth-child(3):before { content: "📈"; }
+.features li:nth-child(4):before { content: "💎"; }
+.features li:nth-child(5):before { content: "🛡️"; }
+
+.features li:hover:before {
+  transform: translateY(-50%) scale(1.2) rotate(10deg);
+}
+
+.features li:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced Scroll-triggered animations */
+.features li {
+  opacity: 0;
+  transform: translateX(-50px) translateY(30px);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: blur(2px);
+}
+
+.features li.animate-in {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+  filter: blur(0);
+}
+
+.features li:nth-child(1) { transition-delay: 0.1s; }
+.features li:nth-child(2) { transition-delay: 0.2s; }
+.features li:nth-child(3) { transition-delay: 0.3s; }
+.features li:nth-child(4) { transition-delay: 0.4s; }
+.features li:nth-child(5) { transition-delay: 0.5s; }
+
+/* Pulse animation for icons */
+@keyframes pulse {
+  0%, 100% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.1); }
+}
+
+.features li:hover:before {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* Glow effect on hover */
+.features li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 200, 150, 0.1), transparent);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.features li:hover::after {
+  opacity: 1;
+}
+
+/* Floating animation for the entire section */
+.features {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Statistics Section */
+.stats-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #00c896 0%, #0a2540 100%);
+  color: white;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Scroll animations for stats */
+.stat-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.stat-item.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-item:nth-child(1) { transition-delay: 0.1s; }
+.stat-item:nth-child(2) { transition-delay: 0.2s; }
+.stat-item:nth-child(3) { transition-delay: 0.3s; }
+.stat-item:nth-child(4) { transition-delay: 0.4s; }
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.roadmap-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.roadmap-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.roadmap-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.roadmap-item:hover {
+  transform: translateY(-5px);
+}
+
+.roadmap-phase {
+  background: linear-gradient(135deg, #00c896, #0a2540);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.roadmap-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.roadmap-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.roadmap-content li {
+  padding: 0.5rem 0;
+  color: #666;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.roadmap-content li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00c896;
+  font-weight: bold;
+}
+
+.roadmap-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.roadmap-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.roadmap-status.current {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.roadmap-status.upcoming {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Features Grid */
+.features-grid {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.features-grid h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0a2540 0%, #00c896 100%);
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn.primary {
+  background: #00c896;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cta-btn.secondary:hover {
+  background: white;
+  color: #0a2540;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .features {
+    padding: 5rem 2rem;
+  }
+  
+  .features h2 {
+    font-size: 2.8rem;
+  }
+  
+  .features li {
+    padding: 1.3rem 1.8rem;
+    font-size: 1.15rem;
+  }
+  
+  .stats-section,
+  .roadmap-section,
+  .features-grid,
+  .cta-section {
+    padding: 3rem 2rem;
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .roadmap-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .crypto-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .features {
+    padding: 4rem 1rem;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .features li {
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+    padding-left: 3rem;
+  }
+  
+  .features li:before {
+    font-size: 1.3rem;
+    left: 0.8rem;
+  }
+  
+  .stats-section,
+  .roadmap-section,
+  .features-grid,
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+  
+  .features h2,
+  .roadmap-section h2,
+  .features-grid h2,
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .roadmap-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .crypto-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .features {
+    padding: 3rem 0.75rem;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features li {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    padding-left: 2.5rem;
+  }
+  
+  .features li:before {
+    font-size: 1.1rem;
+    left: 0.6rem;
+  }
+  
+  .stats-section,
+  .roadmap-section,
+  .features-grid,
+  .cta-section {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .features h2,
+  .roadmap-section h2,
+  .features-grid h2,
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .crypto-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .crypto-card {
+    padding: 1.5rem;
+  }
+  
+  .crypto-name {
+    font-size: 1rem;
+  }
+  
+  .price-value {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .features {
+    padding: 7rem 3rem;
+  }
+  
+  .features h2 {
+    font-size: 3.5rem;
+  }
+  
+  .features li {
+    padding: 2rem 2.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .stats-section,
+  .roadmap-section,
+  .features-grid,
+  .cta-section {
+    padding: 5rem 3rem;
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  
+  .roadmap-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .features-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .crypto-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

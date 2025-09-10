@@ -1,0 +1,616 @@
+.tokenomics {
+  min-height: 100vh;
+}
+
+/* About Mission Section */
+.about-mission {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-content h2 {
+  color: #0a2540;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.mission-content p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.mission-stat {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s;
+}
+
+.mission-stat:hover {
+  transform: translateY(-5px);
+}
+
+.mission-stat .stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00c896;
+  margin-bottom: 0.5rem;
+}
+
+.mission-stat .stat-label {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* About What Section */
+.about-what {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.about-what h2 {
+  text-align: center;
+  color: #0a2540;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid #e9ecef;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Utility Section */
+.utility-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.utility-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.utility-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.utility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.utility-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid #e9ecef;
+}
+
+.utility-card:hover {
+  transform: translateY(-5px);
+}
+
+.utility-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.utility-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.utility-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+/* Utility CTA */
+.utility-cta {
+  text-align: center;
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin: 2rem;
+}
+
+.utility-cta h3 {
+  color: #0a2540;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.utility-cta p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.utility-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.utility-buttons .cta-btn {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.utility-buttons .cta-btn.primary {
+  background: linear-gradient(135deg, #00c896 0%, #00a085 100%);
+  color: #fff;
+}
+
+.utility-buttons .cta-btn.primary:hover {
+  background: linear-gradient(135deg, #00a085 0%, #008f75 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 200, 150, 0.3);
+}
+
+.utility-buttons .cta-btn.secondary {
+  background: transparent;
+  color: #00c896;
+  border: 2px solid #00c896;
+}
+
+.utility-buttons .cta-btn.secondary:hover {
+  background: #00c896;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Allocation Section */
+.allocation-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
+}
+
+.allocation-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.allocation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.allocation-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.allocation-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.allocation-item h4 {
+  color: #00c896;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.allocation-item p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.allocation-item small {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Animation Classes */
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.animate-zoomIn {
+  animation: zoomIn 0.6s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-5 {
+  animation-delay: 0.8s;
+}
+
+.animate-delay-6 {
+  animation-delay: 1s;
+}
+
+.animate-delay-7 {
+  animation-delay: 1.2s;
+}
+
+.animate-delay-8 {
+  animation-delay: 1.4s;
+}
+
+.card-animate {
+  transition: all 0.3s ease;
+}
+
+.card-animate:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .about-mission,
+  .about-what,
+  .utility-section,
+  .allocation-section {
+    padding: 3rem 2rem;
+  }
+  
+  .mission-content h2,
+  .about-what h2,
+  .utility-section h2,
+  .allocation-section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .mission-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .about-grid,
+  .utility-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .allocation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .utility-cta {
+    padding: 2.5rem 2rem;
+    margin: 2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-mission,
+  .about-what,
+  .utility-section,
+  .allocation-section {
+    padding: 2rem 1rem;
+  }
+  
+  .mission-content h2,
+  .about-what h2,
+  .utility-section h2,
+  .allocation-section h2 {
+    font-size: 2rem;
+  }
+  
+  .mission-stats,
+  .about-grid,
+  .utility-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .allocation-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .utility-cta {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .utility-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .utility-buttons .cta-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .about-mission,
+  .about-what,
+  .utility-section,
+  .allocation-section {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .mission-content h2,
+  .about-what h2,
+  .utility-section h2,
+  .allocation-section h2 {
+    font-size: 1.75rem;
+  }
+  
+  .mission-content p,
+  .about-subtitle,
+  .utility-subtitle {
+    font-size: 1rem;
+  }
+  
+  .mission-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .mission-stat {
+    padding: 1.5rem;
+  }
+  
+  .mission-stat .stat-number {
+    font-size: 2rem;
+  }
+  
+  .about-card,
+  .utility-card,
+  .allocation-item {
+    padding: 1.5rem;
+  }
+  
+  .card-icon,
+  .utility-icon {
+    font-size: 2.5rem;
+  }
+  
+  .about-card h3,
+  .utility-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .utility-cta {
+    padding: 1.5rem 1rem;
+    margin: 0.75rem;
+  }
+  
+  .utility-cta h3 {
+    font-size: 1.5rem;
+  }
+  
+  .utility-cta p {
+    font-size: 1rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .about-mission,
+  .about-what,
+  .utility-section,
+  .allocation-section {
+    padding: 5rem 3rem;
+  }
+  
+  .mission-content h2,
+  .about-what h2,
+  .utility-section h2,
+  .allocation-section h2 {
+    font-size: 3rem;
+  }
+  
+  .mission-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+  .about-grid,
+  .utility-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .allocation-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .mission-stat,
+  .about-card,
+  .utility-card,
+  .allocation-item {
+    padding: 2.5rem;
+  }
+  
+  .card-icon,
+  .utility-icon {
+    font-size: 3.5rem;
+  }
+  
+  .utility-cta {
+    padding: 4rem 3rem;
+    margin: 3rem;
+  }
+  
+  .utility-cta h3 {
+    font-size: 2.2rem;
+  }
+  
+  .utility-cta p {
+    font-size: 1.2rem;
+  }
+}

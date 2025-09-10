@@ -1,0 +1,382 @@
+.about {
+  min-height: 100vh;
+}
+
+.about-mission {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  text-align: center;
+}
+
+.mission-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.mission-content p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mission-stat {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.mission-stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00c896;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Enhanced Stats Section */
+.enhanced-stats {
+  background: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
+  padding: 4rem 2rem;
+  position: relative;
+  color: white;
+}
+
+.enhanced-stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(0, 200, 150, 0.1) 50%, transparent 70%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+.enhanced-stats h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.enhanced-stats .mission-stats {
+  position: relative;
+  z-index: 1;
+}
+
+.enhanced-stats .stat-number {
+  color: white;
+  font-size: 3rem;
+}
+
+.enhanced-stats .stat-label {
+  color: #b0b8c1;
+}
+
+/* Technical Specifications */
+.tech-specs {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 4rem 2rem;
+}
+
+.tech-specs h2 {
+  text-align: center;
+  color: #0a2540;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.tech-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.spec-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #00c896;
+}
+
+.spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.spec-card h3 {
+  color: #0a2540;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.spec-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.spec-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* About What Section */
+.about-what {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.about-what h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.about-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  border: 1px solid #e9ecef;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.about-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+  background: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.roadmap-section h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.roadmap-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.roadmap-item:hover {
+  transform: translateY(-5px);
+}
+
+.roadmap-quarter {
+  color: #00c896;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.roadmap-milestone {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #b0b8c1;
+}
+
+/* CTA Enhanced Section */
+.cta-enhanced {
+  background: linear-gradient(135deg, #00c896 0%, #0a2540 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.cta-enhanced h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-enhanced p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons-enhanced {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn-enhanced {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-btn-primary {
+  background: #00c896;
+  color: white;
+}
+
+.cta-btn-primary:hover {
+  background: #00a87a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 200, 150, 0.3);
+}
+
+.cta-btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-btn-secondary:hover {
+  background: white;
+  color: #0a2540;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .about-mission,
+  .enhanced-stats,
+  .tech-specs,
+  .about-what,
+  .roadmap-section,
+  .cta-enhanced {
+    padding: 2rem 1rem;
+  }
+  
+  .mission-content h2,
+  .enhanced-stats h2,
+  .tech-specs h2,
+  .about-what h2,
+  .roadmap-section h2,
+  .cta-enhanced h2 {
+    font-size: 2rem;
+  }
+  
+  .mission-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons-enhanced {
+    flex-direction: column;
+    align-items: center;
+  }
+}

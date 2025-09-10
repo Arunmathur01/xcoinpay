@@ -1,0 +1,1023 @@
+/* Global Animations for XCoinpay MERN Stack Application */
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Centered Typewriter Animation */
+@keyframes typewriterCentered {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-color: transparent;
+  }
+  51%, 100% {
+    border-color: #fff;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    opacity: 0;
+    transform: perspective(400px) rotateX(90deg);
+  }
+  40% {
+    transform: perspective(400px) rotateX(-20deg);
+  }
+  60% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  80% {
+    transform: perspective(400px) rotateX(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipInY {
+  from {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+  40% {
+    transform: perspective(400px) rotateY(-20deg);
+  }
+  60% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+  80% {
+    transform: perspective(400px) rotateY(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg);
+  }
+}
+
+/* Animation Classes */
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out both;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease-out both;
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 1s ease-out both;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease-out both;
+}
+
+.animate-slideInFromTop {
+  animation: slideInFromTop 0.8s ease-out both;
+}
+
+.animate-slideInFromBottom {
+  animation: slideInFromBottom 0.8s ease-out both;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out both;
+}
+
+.animate-rotateIn {
+  animation: rotateIn 0.8s ease-out both;
+}
+
+.animate-bounceIn {
+  animation: bounceIn 0.8s ease-out both;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out both;
+}
+
+.animate-zoomIn {
+  animation: zoomIn 0.6s ease-out both;
+}
+
+.animate-flipInX {
+  animation: flipInX 1s ease-out both;
+}
+
+.animate-flipInY {
+  animation: flipInY 1s ease-out both;
+}
+
+/* Staggered Animation Delays */
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-5 {
+  animation-delay: 0.5s;
+}
+
+.animate-delay-6 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-7 {
+  animation-delay: 0.7s;
+}
+
+.animate-delay-8 {
+  animation-delay: 0.8s;
+}
+
+.animate-delay-9 {
+  animation-delay: 0.9s;
+}
+
+.animate-delay-10 {
+  animation-delay: 1s;
+}
+
+/* Continuous Animations */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background-size: 200px 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  animation: typewriter 3s , blink 1s infinite;
+}
+
+/* Enhanced Typewriter Effect for Headers */
+.typewriter-header {
+  overflow: hidden;
+  border-right: 3px solid #00c896;
+  white-space: nowrap;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: typewriterCentered 3s steps(50, end), blink 1s infinite;
+}
+
+/* Large Header Animation - Original Font Style */
+.large-header {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* Responsive Large Headers */
+@media (max-width: 768px) {
+  .typewriter-header,
+  .large-header {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typewriter-header,
+  .large-header {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Hero Section Enhancements for Large Headers */
+.hero .large-header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.ico-hero .large-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.signin-header .large-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 3.5rem;
+}
+
+/* Hover Animations */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(0, 200, 150, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Button Animations */
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.5s;
+}
+
+.btn-animate:hover::before {
+  left: 100%;
+}
+
+.btn-animate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Card Animations */
+.card-animate {
+  transition: all 0.3s ease;
+}
+
+.card-animate:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Loading Animations */
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #00c896;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+  .animate-fadeInUp,
+  .animate-fadeInDown,
+  .animate-fadeInLeft,
+  .animate-fadeInRight {
+    animation-duration: 0.6s;
+  }
+  
+  .animate-delay-1,
+  .animate-delay-2,
+  .animate-delay-3,
+  .animate-delay-4,
+  .animate-delay-5 {
+    animation-delay: 0.1s;
+  }
+}
+
+/* Features Section Enhancements */
+.features {
+  position: relative;
+  overflow: hidden;
+}
+
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 200, 150, 0.1), transparent);
+  animation: shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.features li {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.features li:hover {
+  background: rgba(0, 200, 150, 0.05);
+  padding-left: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 200, 150, 0.1);
+}
+
+.features li:before {
+  transition: all 0.3s ease;
+}
+
+.features li:hover:before {
+  transform: scale(1.2);
+  color: #00c896;
+}
+
+/* Checkmark Animation */
+@keyframes checkmarkPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.features li:hover:before {
+  animation: checkmarkPulse 0.6s ease-in-out;
+}
+
+/* Crypto Section Styles */
+.crypto-section {
+  padding: 4rem 2rem;
+  background: #0a2540;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.crypto-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.crypto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.crypto-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.crypto-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s;
+}
+
+.crypto-card:hover::before {
+  left: 100%;
+}
+
+.crypto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.crypto-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.crypto-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.crypto-icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fallback-icon {
+  display: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.crypto-info {
+  flex: 1;
+}
+
+.crypto-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: #fff;
+}
+
+.crypto-symbol {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.crypto-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.price-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.price-change {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.price-change.positive {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.price-change.negative {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.crypto-market-cap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.market-cap-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.market-cap-value {
+  font-weight: 600;
+  color: #fff;
+}
+
+.loading-container {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+}
+
+.loading-container p {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.crypto-footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.crypto-footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive Crypto Cards */
+@media (max-width: 768px) {
+  .crypto-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .crypto-card {
+    padding: 1.25rem;
+  }
+  
+  .price-value {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .crypto-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .crypto-card {
+    padding: 1rem;
+  }
+}
+
+/* Enhanced Mission Content Styles */
+.about-mission {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-mission::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(0,200,150,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.mission-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mission-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mission-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: #00c896;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.mission-icon {
+  font-size: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.mission-description {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mission-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-text-secondary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #00c896;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00c896, #00a884);
+  border-radius: 50%;
+  color: white;
+  flex-shrink: 0;
+}
+
+.highlight-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0a2540;
+  margin: 0 0 0.5rem 0;
+}
+
+.highlight-content p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.mission-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mission-stat {
+  background: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+}
+
+.mission-stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s;
+}
+
+.mission-stat:hover::before {
+  left: 100%;
+}
+
+.mission-stat:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #00c896;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+/* Responsive Mission Content */
+@media (max-width: 768px) {
+  .mission-highlights {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .mission-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .mission-stat {
+    min-width: auto;
+    max-width: 100%;
+  }
+  
+  .mission-text {
+    font-size: 1.1rem;
+  }
+  
+  .highlight-item {
+    padding: 1rem;
+  }
+  
+  .highlight-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

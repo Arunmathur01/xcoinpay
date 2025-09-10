@@ -1,0 +1,354 @@
+/* Whitepaper Button */
+.whitepaper-btn {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.whitepaper-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+}
+
+.whitepaper-btn:active {
+  transform: translateY(0);
+}
+
+/* Whitepaper Modal */
+.whitepaper-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.whitepaper-modal-content {
+  background: linear-gradient(135deg, #0a2540 0%, #00c896 100%);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: white;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.4s ease-out;
+}
+
+.whitepaper-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.whitepaper-close:hover {
+  color: #00c896;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Whitepaper Content */
+.whitepaper-content {
+  padding: 3rem;
+  line-height: 1.8;
+}
+
+.whitepaper-content h1 {
+  color: #00c896;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.whitepaper-content h2 {
+  color: #00c896;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #00c896;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.whitepaper-content p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.whitepaper-content ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.whitepaper-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.whitepaper-content strong {
+  color: #00c896;
+  font-weight: 600;
+}
+
+.whitepaper-content a {
+  color: #00c896;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whitepaper-content a:hover {
+  color: #00b386;
+  text-decoration: underline;
+}
+
+/* Tables */
+.tokenomics-table,
+.roadmap-table {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.whitepaper-content table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.whitepaper-content th,
+.whitepaper-content td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.whitepaper-content th {
+  background: rgba(0, 200, 150, 0.2);
+  color: #00c896;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.whitepaper-content td {
+  font-size: 0.9rem;
+}
+
+.whitepaper-content tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tokenomics-summary {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(0, 200, 150, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #00c896;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(0, 200, 150, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .whitepaper-modal {
+    padding: 1rem;
+  }
+  
+  .whitepaper-modal-content {
+    max-height: 95vh;
+  }
+  
+  .whitepaper-content {
+    padding: 2rem;
+  }
+  
+  .whitepaper-content h1 {
+    font-size: 2rem;
+  }
+  
+  .whitepaper-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .whitepaper-modal {
+    padding: 0.5rem;
+  }
+  
+  .whitepaper-content {
+    padding: 1.5rem;
+  }
+  
+  .whitepaper-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .whitepaper-content h2 {
+    font-size: 1.3rem;
+  }
+  
+  .whitepaper-content table {
+    font-size: 0.8rem;
+  }
+  
+  .whitepaper-content th,
+  .whitepaper-content td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .whitepaper-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .whitepaper-content {
+    padding: 1rem;
+  }
+  
+  .whitepaper-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .whitepaper-content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .whitepaper-content table {
+    font-size: 0.75rem;
+  }
+  
+  .whitepaper-content th,
+  .whitepaper-content td {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .whitepaper-close {
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Custom Scrollbar */
+.whitepaper-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.whitepaper-modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.whitepaper-modal-content::-webkit-scrollbar-thumb {
+  background: #00c896;
+  border-radius: 4px;
+}
+
+.whitepaper-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #00b386;
+}
+
+/* Print Styles */
+@media print {
+  .whitepaper-modal {
+    position: static;
+    background: none;
+    backdrop-filter: none;
+  }
+  
+  .whitepaper-modal-content {
+    box-shadow: none;
+    border-radius: 0;
+    max-height: none;
+  }
+  
+  .whitepaper-close {
+    display: none;
+  }
+  
+  .whitepaper-content {
+    color: black;
+    background: white;
+  }
+  
+  .whitepaper-content h1,
+  .whitepaper-content h2 {
+    color: #333;
+  }
+  
+  .whitepaper-content table {
+    background: #f8f9fa;
+  }
+  
+  .whitepaper-content th {
+    background: #e9ecef;
+    color: #333;
+  }
+}
