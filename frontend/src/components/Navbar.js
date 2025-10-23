@@ -267,7 +267,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar animate-slideInFromTop ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo animate-fadeInLeft animate-delay-1">
-        <img src="/lo.png" alt="XCoinpay logo" />
+        <img src="/crlogo.jpg" alt="XCoinpay logo" />
         <span>XCoinpay</span>
       </div>
       

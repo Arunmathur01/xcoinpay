@@ -12,8 +12,13 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
+    'http://localhost:3001',
     'https://xcoinpay-frontend.onrender.com',
-    'https://xcoinpay.onrender.com'
+    'https://xcoinpay.onrender.com',
+    'https://xcoinpay.org',
+    'https://www.xcoinpay.org',
+    /^https:\/\/.*\.xcoinpay\.org$/,
+   
   ],
   credentials: true
 }));

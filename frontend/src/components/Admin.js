@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API_BASE_URL from '../config/api';
+
+// Set axios default base URL
+axios.defaults.baseURL = API_BASE_URL;
 
 const Admin = () => {
   const [kycs, setKycs] = useState([]);

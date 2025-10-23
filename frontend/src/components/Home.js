@@ -102,9 +102,9 @@ const Home = () => {
         <ul>
           <li className="animate-fadeInLeft animate-delay-6 hover-lift">Real-world utility: Withdraw funds from exchanges without P2P friction</li>
           <li className="animate-fadeInLeft animate-delay-7 hover-lift">10,000 TPS: Designed for real-time performance</li>
-          <li className="animate-fadeInLeft animate-delay-8 hover-lift">Deflationary model: CPAY buyback + burn using transaction fees</li>
+          <li className="animate-fadeInLeft animate-delay-8 hover-lift">Deflationary model: XIPAY buyback + burn using transaction fees</li>
           <li className="animate-fadeInLeft animate-delay-9 hover-lift">Investor-first launch strategy: Low entry, high potential</li>
-          <li className="animate-fadeInLeft animate-delay-10 hover-lift">Native stablecoin (CUSDT): Stability in every transaction</li>
+          <li className="animate-fadeInLeft animate-delay-10 hover-lift">Native stablecoin (XUSDT): Stability in every transaction</li>
         </ul>
       </section>
 

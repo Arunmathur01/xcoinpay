@@ -15,6 +15,7 @@ const ICO = () => {
   const [transactions, setTransactions] = useState([]);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
+  const [initializing, setInitializing] = useState(true);
   const [kycStatus, setKycStatus] = useState('unknown'); // none|pending|approved|rejected|unknown
   const [kycInfo, setKycInfo] = useState(null); // latest kyc record from backend
   
@@ -24,8 +25,11 @@ const ICO = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    checkAuthentication();
-    fetchTransactions();
+    (async () => {
+      await checkAuthentication();
+      await fetchTransactions();
+      setInitializing(false);
+    })();
   }, []);
 
   const checkAuthentication = async () => {
@@ -87,6 +91,19 @@ const ICO = () => {
       setTransactions(storedTransactions);
     }
   };
+
+  if (initializing) {
+    return (
+      <div className="ico-container">
+        <div className="auth-required-container">
+          <div className="auth-required-card">
+            <div className="auth-required-icon">⏳</div>
+            <h2>Loading...</h2>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const connectMetaMask = async () => {
     try {
@@ -563,7 +580,7 @@ const ICO = () => {
         <div className="specifications-grid">
           <div className="spec-item">
             <div className="spec-label">Token Name</div>
-            <div className="spec-value">Cpay</div>
+            <div className="spec-value">Xipay</div>
           </div>
           <div className="spec-item">
             <div className="spec-label">Token Type</div>
@@ -571,15 +588,15 @@ const ICO = () => {
           </div>
           <div className="spec-item">
             <div className="spec-label">Total Supply</div>
-            <div className="spec-value">1,000,000,000 Cpay</div>
+            <div className="spec-value">1,000,000,000 Xipay</div>
           </div>
           <div className="spec-item">
             <div className="spec-label">Tokens for Sale</div>
-            <div className="spec-value">200,000,000 Cpay</div>
+            <div className="spec-value">200,000,000 Xipay</div>
           </div>
           <div className="spec-item">
             <div className="spec-label">ICO Floor Price</div>
-            <div className="spec-value">$0.10 USD per Cpay</div>
+            <div className="spec-value">$0.10 USD per Xipay</div>
           </div>
           <div className="spec-item">
             <div className="spec-label">Accepted Payments</div>
@@ -615,37 +632,37 @@ const ICO = () => {
               <tr>
                 <td>ICO Sale</td>
                 <td>20%</td>
-                <td>200,000,000 Cpay</td>
+                <td>200,000,000 Xipay</td>
               </tr>
               <tr>
                 <td>Team & Founders</td>
                 <td>15%</td>
-                <td>150,000,000 Cpay</td>
+                <td>150,000,000 Xipay</td>
               </tr>
               <tr>
                 <td>Liquidity & Reserves</td>
                 <td>25%</td>
-                <td>250,000,000 Cpay</td>
+                <td>250,000,000 Xipay</td>
               </tr>
               <tr>
                 <td>Ecosystem & Rewards</td>
                 <td>20%</td>
-                <td>200,000,000 Cpay</td>
+                <td>200,000,000 Xipay</td>
               </tr>
               <tr>
                 <td>Partnerships & Growth</td>
                 <td>10%</td>
-                <td>100,000,000 Cpay</td>
+                <td>100,000,000 Xipay</td>
               </tr>
               <tr>
                 <td>Advisors</td>
                 <td>5%</td>
-                <td>50,000,000 Cpay</td>
+                <td>50,000,000 Xipay</td>
               </tr>
               <tr>
                 <td>Community Airdrop</td>
                 <td>5%</td>
-                <td>50,000,000 Cpay</td>
+                <td>50,000,000 Xipay</td>
               </tr>
             </tbody>
           </table>
@@ -780,7 +797,7 @@ const ICO = () => {
      {currentStep === 3 && (
        <div className="success-screen">
          <h3>🎉 Payment Successful!</h3>
-         <p>Your CPAY tokens have been sent to your connected wallet.</p>
+        <p>Your XIPAY tokens have been sent to your connected wallet.</p>
          <button onClick={() => setCurrentStep(1)}>Start New Investment</button>
        </div>
      )}
@@ -799,7 +816,7 @@ const ICO = () => {
             </div>
             <div className="summary-stat">
               <span className="stat-label">Total Tokens</span>
-              <span className="stat-value">{transactions.reduce((sum, tx) => sum + tx.totalTokens, 0)} CPAY</span>
+              <span className="stat-value">{transactions.reduce((sum, tx) => sum + tx.totalTokens, 0)} XIPAY</span>
             </div>
           </div>
           <div className="transaction-list">
@@ -812,7 +829,7 @@ const ICO = () => {
                 <div className="tx-details">
                   <div className="tx-detail-row">
                     <span className="detail-label">Tokens:</span>
-                    <span className="detail-value">{tx.totalTokens} CPAY</span>
+                    <span className="detail-value">{tx.totalTokens} XIPAY</span>
                   </div>
                   <div className="tx-detail-row">
                     <span className="detail-label">Token Type:</span>
@@ -842,6 +859,91 @@ const ICO = () => {
          </div>
                 </div>
       )}
+      
+      {/* Terms and Conditions */}
+      <div className="ico-terms" style={{ marginTop: '2rem' }}>
+        <details>
+          <summary style={{ cursor: 'pointer', fontWeight: 600, fontSize: '1.1rem' }}>Xcoinpay – Terms and Conditions</summary>
+          <div style={{ paddingTop: '1rem' }}>
+            <p><strong>Last Updated:</strong> 1st April 2025</p>
+            <p>
+              Welcome to Xcoinpay ("The Future of Crypto Payments"). These Terms and Conditions ("Terms") govern your access to and use of the Xcoinpay website, platform, and any associated services, including participation in our Initial Coin Offering (ICO). By accessing or using Xcoinpay, you ("User," "Investor," or "Participant") agree to comply with and be bound by these Terms.
+            </p>
+            <p>If you do not agree to these Terms, please refrain from using our platform or participating in our ICO.</p>
+
+            <hr />
+            <h4>1. Eligibility</h4>
+            <ol>
+              <li>You must be at least 18 years of age or the legal age of majority in your jurisdiction to participate in the Xcoinpay ICO.</li>
+              <li>By participating, you represent that you are not a resident or citizen of any jurisdiction where participation in token sales is restricted or prohibited by law.</li>
+              <li>You are solely responsible for ensuring compliance with the laws of your jurisdiction regarding cryptocurrency investments.</li>
+            </ol>
+
+            <h4>2. ICO Participation and Investment</h4>
+            <ol>
+              <li>Participation in the Xcoinpay ICO involves purchasing or investing in Xcoinpay Tokens (XIPAY) or any associated digital assets ("Tokens").</li>
+              <li>By investing, you acknowledge that:</li>
+            </ol>
+            <ul>
+              <li>You understand the nature of cryptocurrency investments, including potential volatility and risks.</li>
+              <li>You have performed your own due diligence before investing.</li>
+              <li>The purchase of XIPAY Tokens does not constitute an investment in a company or equity interest.</li>
+            </ul>
+
+            <h4>3. Token Allocation and Allotment</h4>
+            <ol>
+              <li>The final allotment of XIPAY Tokens may take additional time to process due to the scale and complexity of the project.</li>
+              <li>Xcoinpay will make all reasonable efforts to allocate tokens to participants as promptly as possible; however, delays may occur, and the organization will not be liable for any losses, damages, or inconvenience arising from such delays.</li>
+              <li>In the event the ICO is oversubscribed, the allocation of tokens shall be made on a proportionate basis relative to the amount invested by each participant.</li>
+              <li>Any unallocated or remaining funds after proportional distribution will be refunded or adjusted in accordance with Xcoinpay’s internal policies.</li>
+            </ol>
+
+            <h4>4. Discretion and Final Authority</h4>
+            <ol>
+              <li>All decisions regarding the ICO process, token pricing, distribution, and related matters shall be made solely at the discretion of Xcoinpay.</li>
+              <li>Xcoinpay reserves the full right and authority to modify, amend, suspend, or cancel any part of the ICO or these Terms at any time without prior notice.</li>
+              <li>Participants agree that all such decisions shall be final and binding.</li>
+            </ol>
+
+            <h4>5. No Liability and Risk Disclaimer</h4>
+            <ol>
+              <li>Cryptocurrency and blockchain-based assets are inherently volatile and subject to market risks.</li>
+              <li>Xcoinpay shall not be responsible for any direct, indirect, incidental, consequential, or special damages arising out of:</li>
+            </ol>
+            <ul>
+              <li>Delays in token allocation</li>
+              <li>Technical issues or system failures</li>
+              <li>Market fluctuations or token value changes</li>
+              <li>User’s reliance on information provided on the platform</li>
+            </ul>
+            <p>Participants understand and accept that all investments are made at their own risk.</p>
+
+            <h4>6. Refunds and Cancellations</h4>
+            <ol>
+              <li>Once tokens are purchased or funds are transferred during the ICO, transactions are final and non-refundable.</li>
+              <li>Refunds will only be processed in cases of oversubscription, where proportional allocation results in excess funds.</li>
+            </ol>
+
+            <h4>7. Intellectual Property</h4>
+            <p>All content, branding, design, trademarks, and related materials on Xcoinpay are the sole property of Xcoinpay. You may not copy, distribute, or use them without prior written consent.</p>
+
+            <h4>8. Amendments</h4>
+            <p>Xcoinpay reserves the right to revise or update these Terms at any time. Continued participation after such changes constitutes acceptance of the revised Terms.</p>
+
+            <h4>9. Governing Law and Jurisdiction</h4>
+            <p>
+              These Terms shall be governed by and construed in accordance with the laws of [Insert Jurisdiction]. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in [Insert Location].
+            </p>
+
+            <h4>10. Contact Information</h4>
+            <p>
+              For any inquiries or support regarding these Terms or the ICO, please contact us at:<br />
+              📧 <a href="mailto:support@xcoinpay.org">support@xcoinpay.org</a><br />
+              🌐 <a href="https://www.xcoinpay.org" target="_blank" rel="noreferrer">www.xcoinpay.org</a>
+            </p>
+          </div>
+        </details>
+      </div>
       </div>
     </>
   );

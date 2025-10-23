@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -19,9 +19,19 @@ import './animations.css';
 
 function AppContent() {
   const location = useLocation();
+  const { loading } = useAuth();
   const isSignInPage = location.pathname === '/signin';
   const isKYCPage = location.pathname === '/kyc';
   const isAdminPage = location.pathname === '/admin';
+
+  if (loading) {
+    return (
+      <div className="App">
+        <Navbar />
+        <div style={{ padding: '2rem', textAlign: 'center' }}>Loading...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="App">

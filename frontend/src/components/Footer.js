@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-brand animate-fadeInLeft animate-delay-1">
           <div className="footer-logo">
-            <img src="/lo.png" alt="XCoinpay logo" />
+            <img src="/crlogo.jpg" alt="XCoinpay logo" />
             <span>XCoinpay</span>
           </div>
           <p className="footer-tagline animate-fadeInUp animate-delay-2">
