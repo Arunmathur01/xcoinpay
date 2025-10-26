@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
   // Set up axios defaults
   axios.defaults.baseURL =
     process.env.REACT_APP_API_URL ||
-    (process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : 'https://xcoinpay-backend.onrender.com');
+    (process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : 'https://xcoinpay.org/api');
 
   useEffect(() => {
     if (token) {

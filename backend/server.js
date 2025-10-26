@@ -174,7 +174,7 @@ const requireOwner = async (req, res, next) => {
 
 // helper to build owner action links
 const getOwnerActionLinks = (userId) => {
-  const base = process.env.APP_BASE_URL || 'http://localhost:5000';
+  const base = process.env.APP_BASE_URL || 'https://xcoinpay.org';
   return {
     approve: `${base}/api/kyc/approve?userId=${userId}`,
     reject: `${base}/api/kyc/reject?userId=${userId}`
