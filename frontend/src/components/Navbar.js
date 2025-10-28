@@ -303,7 +303,7 @@ const Navbar = () => {
               {isUserSignedIn && userTotalTokens > 0 && (
                 <div className="user-token-display">
                   <span className="token-amount">{userTotalTokens.toLocaleString()}</span>
-                  <span className="token-label">CPAY</span>
+                  <span className="token-label">XIPAY</span>
                 </div>
               )}
             </div>
@@ -365,7 +365,7 @@ const Navbar = () => {
                                <div key={index} className={`history-item-compact ${transaction.status}`}>
                                  <div className="history-item-info">
                                    <span className={`history-token-amount-compact ${transaction.status}`}>
-                                     {transaction.status === 'completed' ? '+' : ''}{parseFloat(transaction.tokenAmount).toLocaleString()} CPAY
+                                     {transaction.status === 'completed' ? '+' : ''}{parseFloat(transaction.tokenAmount).toLocaleString()} XIPAY
                                    </span>
                                    <span className="history-date-compact">
                                      {new Date(transaction.createdAt).toLocaleDateString()}

@@ -95,7 +95,7 @@ const About = () => {
               <div className="mission-stat card-animate animate-scaleIn animate-delay-5">
                 <div className="stat-icon">🔥</div>
                 <div className="stat-number">1B</div>
-                <div className="stat-label">CPAY Supply</div>
+                <div className="stat-label">XIPAY Supply</div>
                 <div className="stat-description">Deflationary Model</div>
               </div>
             </div>
@@ -161,7 +161,7 @@ const About = () => {
           <div className="about-grid">
             <div className="about-card">
               <div className="card-icon">⚡</div>
-              <h3>CPAY Token</h3>
+              <h3>XIPAY Token</h3>
               <p>The native utility token powering the XCoinpay ecosystem, used for gas fees, staking, and governance.</p>
             </div>
             <div className="about-card">
@@ -230,7 +230,7 @@ const About = () => {
             <div className="roadmap-item">
               <div className="roadmap-quarter">Q3 2026</div>
               <div className="roadmap-milestone">
-                • CPAY Burn Dashboard<br/>
+                • XIPAY Burn Dashboard<br/>
                 • Global Expansion Campaign<br/>
                 • Strategic Partnerships
               </div>

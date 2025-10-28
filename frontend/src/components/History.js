@@ -76,7 +76,7 @@ const History = () => {
           >
             Transaction History
           </h1>
-          <p className="animate-fadeInUp animate-delay-2">View all your CPAY token purchase transactions</p>
+          <p className="animate-fadeInUp animate-delay-2">View all your XIPAY token purchase transactions</p>
         </div>
       </header>
 
@@ -127,7 +127,7 @@ const History = () => {
                   <div className="transaction-amount">
                     <span className="amount-label">Token Amount:</span>
                     <span className={`amount-value ${transaction.status}`}>
-                      {transaction.status === 'completed' ? '+' : ''}{parseFloat(transaction.tokenAmount).toLocaleString()} CPAY
+                      {transaction.status === 'completed' ? '+' : ''}{parseFloat(transaction.tokenAmount).toLocaleString()} XIPAY
                     </span>
                   </div>
 
