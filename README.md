@@ -106,9 +106,9 @@ Required environment variables for production:
 ```env
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/database
 JWT_SECRET=your-super-secret-jwt-key
-ADMIN_EMAIL=admin@xcoinpay.com
+ADMIN_EMAIL=admin@xcoinpay.org
 ADMIN_PASSWORD=your-admin-password
-OWNER_EMAIL=admin@xcoinpay.com
+OWNER_EMAIL=admin@xcoinpay.org
 ```
 
 ## 📱 Usage
