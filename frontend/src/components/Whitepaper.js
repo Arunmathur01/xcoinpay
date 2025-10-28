@@ -81,7 +81,7 @@ const Whitepaper = () => {
                   <li>A high-speed blockchain (10,000 TPS) optimized for real-time, fee-efficient transactions</li>
                   <li>A $0.25 flat fee per transaction — predictable and affordable</li>
                   <li>A P2P-free withdrawal mechanism that allows users to instantly convert and withdraw through integrated platforms</li>
-                  <li>A deflationary model where 100% of network fees are used to burn CPAY, creating long-term scarcity and token value</li>
+                  <li>A deflationary model where 100% of network fees are used to burn XIPAY, creating long-term scarcity and token value</li>
                 </ul>
               </section>
 
@@ -98,7 +98,7 @@ const Whitepaper = () => {
               <section>
                 <h2>5. Ecosystem Overview</h2>
                 <ul>
-                  <li><strong>CPAY — Native Utility Token:</strong> Transaction fees, validator rewards, deflationary burn</li>
+                  <li><strong>XIPAY — Native Utility Token:</strong> Transaction fees, validator rewards, deflationary burn</li>
                   <li><strong>CUSDT — XCoinpay USD Stablecoin:</strong> Pegged 1:1 to USD, instant withdrawals, low-volatility settlements, daily payments</li>
                 </ul>
               </section>
@@ -110,7 +110,7 @@ const Whitepaper = () => {
                     <thead>
                       <tr>
                         <th>Allocation</th>
-                        <th>Supply (CPAY)</th>
+                        <th>Supply (XIPAY)</th>
                         <th>% of Total</th>
                         <th>Unlock Schedule</th>
                       </tr>
@@ -156,23 +156,23 @@ const Whitepaper = () => {
                   </table>
                 </div>
                 <p className="tokenomics-summary">
-                  <strong>Total Supply:</strong> 1,000,000,000 CPAY<br />
-                  <strong>Pre-Sale Price:</strong> $0.10 per CPAY
+                  <strong>Total Supply:</strong> 1,000,000,000 XIPAY<br />
+                  <strong>Pre-Sale Price:</strong> $0.10 per XIPAY
                 </p>
 
                 <div className="tokenomics-details">
-                  <h3>6.1 CPAY Utilities</h3>
+                  <h3>6.1 XIPAY Utilities</h3>
                   <ul>
                     <li>Gas for on-chain transactions and smart contracts</li>
                     <li>Staking for validator/delegator rewards and governance</li>
-                    <li>Fee-burn mechanism: 100% of network fees are used to buy back and burn CPAY</li>
-                    <li>Discounts on withdrawal fees and ecosystem services when paid in CPAY</li>
+                    <li>Fee-burn mechanism: 100% of network fees are used to buy back and burn XIPAY</li>
+                    <li>Discounts on withdrawal fees and ecosystem services when paid in XIPAY</li>
                   </ul>
 
                   <h3>6.2 Sale Rounds</h3>
                   <ul>
                     <li><strong>Private/Seed:</strong> Strategic partners and early contributors (vesting applies)</li>
-                    <li><strong>Pre-Sale:</strong> Public allocation at $0.10 per CPAY (immediate unlock)</li>
+                    <li><strong>Pre-Sale:</strong> Public allocation at $0.10 per XIPAY (immediate unlock)</li>
                     <li><strong>Public/Listing:</strong> Initial exchange listings post-mainnet</li>
                   </ul>
 
@@ -187,7 +187,7 @@ const Whitepaper = () => {
                   <h3>6.4 Emissions & Deflation</h3>
                   <ul>
                     <li>Base issuance for staking rewards declines over time (disinflationary)</li>
-                    <li>All protocol fees are used to market-buy and burn CPAY (deflationary)</li>
+                    <li>All protocol fees are used to market-buy and burn XIPAY (deflationary)</li>
                     <li>Net supply expected to trend downward with adoption</li>
                   </ul>
                 </div>
@@ -197,7 +197,7 @@ const Whitepaper = () => {
                 <h2>7. Revenue & Deflation Model</h2>
                 <ul>
                   <li>All on-chain transactions incur a $0.25 flat fee</li>
-                  <li>Fees are used to buy back and burn CPAY tokens</li>
+                  <li>Fees are used to buy back and burn XIPAY tokens</li>
                   <li>Continuous reduction in circulating supply</li>
                   <li>Increased scarcity and long-term value</li>
                 </ul>
@@ -236,7 +236,7 @@ const Whitepaper = () => {
                       </tr>
                       <tr>
                         <td>Q3 2026</td>
-                        <td>CPAY Burn Dashboard, Global Expansion Campaign</td>
+                        <td>XIPAY Burn Dashboard, Global Expansion Campaign</td>
                       </tr>
                       <tr>
                         <td>Q4 2026</td>
@@ -250,8 +250,8 @@ const Whitepaper = () => {
               <section>
                 <h2>9. Pre-Sale Details</h2>
                 <ul>
-                  <li><strong>Token:</strong> CPAY</li>
-                  <li><strong>Supply:</strong> 200,000,000 CPAY</li>
+                  <li><strong>Token:</strong> XIPAY</li>
+                  <li><strong>Supply:</strong> 200,000,000 XIPAY</li>
                   <li><strong>Price:</strong> $0.10 per token</li>
                   <li><strong>Method:</strong> Via official platform (TBA)</li>
                   <li><strong>Use of Funds:</strong> Tech development, exchange listings, marketing, and liquidity</li>
@@ -275,8 +275,8 @@ const Whitepaper = () => {
               <section className="contact-section">
                 <h2>Contact</h2>
                 <p>
-                  Website: <a href="#" target="_blank" rel="noopener noreferrer">xcoinpay.com</a><br />
-                  Email: <a href="mailto:support@xcoinpay.com">support@xcoinpay.com</a>
+                  Website: <a href="#" target="_blank" rel="noopener noreferrer">xcoinpay.org</a><br />
+                  Email: <a href="mailto:support@xcoinpay.org">support@xcoinpay.org</a>
                 </p>
               </section>
             </div>
