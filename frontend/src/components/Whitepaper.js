@@ -99,7 +99,7 @@ const Whitepaper = () => {
                 <h2>5. Ecosystem Overview</h2>
                 <ul>
                   <li><strong>XIPAY — Native Utility Token:</strong> Transaction fees, validator rewards, deflationary burn</li>
-                  <li><strong>CUSDT — XCoinpay USD Stablecoin:</strong> Pegged 1:1 to USD, instant withdrawals, low-volatility settlements, daily payments</li>
+                  <li><strong>XUSDT — XCoinpay USD Stablecoin:</strong> Pegged 1:1 to USD, instant withdrawals, low-volatility settlements, daily payments</li>
                 </ul>
               </section>
 
@@ -228,7 +228,7 @@ const Whitepaper = () => {
                       </tr>
                       <tr>
                         <td>Q1 2026</td>
-                        <td>Mainnet Launch, CUSDT Launch, Exchange Listings</td>
+                        <td>Mainnet Launch, XUSDT Launch, Exchange Listings</td>
                       </tr>
                       <tr>
                         <td>Q2 2026</td>

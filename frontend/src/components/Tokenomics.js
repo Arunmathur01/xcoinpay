@@ -9,7 +9,7 @@ const Tokenomics = () => {
         <h1 className="large-header typewriter-header">XCoinpay Tokenomics</h1>
         <p className="animate-fadeInUp animate-delay-2">Transparent. Deflationary. Designed for Growth.</p>
         <p className="hero-subtitle animate-fadeInUp animate-delay-3">
-          At the heart of the XCoinpay ecosystem lies XIPAY, our native utility token, and CUSDT, our blockchain-native stablecoin. Together, they power a scalable, user-first blockchain designed to solve real-world problems in crypto withdrawals, payments, and asset movement.
+          At the heart of the XCoinpay ecosystem lies XIPAY, our native utility token, and XUSDT, our blockchain-native stablecoin. Together, they power a scalable, user-first blockchain designed to solve real-world problems in crypto withdrawals, payments, and asset movement.
         </p>
       </header>
 
