@@ -215,7 +215,7 @@ const About = () => {
               <div className="roadmap-quarter">Q1 2026</div>
               <div className="roadmap-milestone">
                 • Mainnet Launch<br/>
-                • CUSDT Launch<br/>
+                • XUSDT Launch<br/>
                 • Initial Exchange Listings
               </div>
             </div>
