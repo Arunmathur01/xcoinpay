@@ -13,6 +13,7 @@ import Admin from './components/Admin';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import CookiePolicy from './components/CookiePolicy';
+import ScrollToTop from './components/ScrollToTop';
 
 import Footer from './components/Footer';
 import './App.css';
@@ -38,6 +39,7 @@ function AppContent() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
