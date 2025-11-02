@@ -65,9 +65,9 @@ const Footer = () => {
         <div className="footer-bottom-content">
           <p>&copy; 2024 XCoinpay. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-service">Terms of Service</Link>
+            <Link to="/cookie-policy">Cookie Policy</Link>
           </div>
         </div>
       </div>

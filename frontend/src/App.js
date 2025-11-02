@@ -10,6 +10,9 @@ import SignIn from './components/SignIn';
 import KYC from './components/KYC';
 import History from './components/History';
 import Admin from './components/Admin';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
+import CookiePolicy from './components/CookiePolicy';
 
 import Footer from './components/Footer';
 import './App.css';
@@ -45,6 +48,9 @@ function AppContent() {
         <Route path="/kyc" element={<KYC />} />
         <Route path="/history" element={<History />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
       </Routes>
       {!isSignInPage && !isKYCPage && !isAdminPage && <Footer />}
     </div>
