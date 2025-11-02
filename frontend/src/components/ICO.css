@@ -4,6 +4,53 @@
   padding: 2rem;
 }
 
+/* Important Message - Binance Listing */
+.ico-important-message {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.important-message-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  border-left: 4px solid #ffd700;
+}
+
+.important-message-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.important-message-content p {
+  margin: 0;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.important-message-content strong {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .important-message-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .important-message-content p {
+    font-size: 1rem;
+  }
+}
+
 /* ICO Specifications Styles */
 .ico-specifications {
   background: white;

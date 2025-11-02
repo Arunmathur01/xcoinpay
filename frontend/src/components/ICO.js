@@ -571,6 +571,14 @@ const ICO = () => {
           a high-speed blockchain ecosystem that eliminates the friction between crypto exchanges and real-world access to funds.
         </p>
       </header>
+
+      {/* Important Message - Binance Listing */}
+      <div className="ico-important-message animate-fadeInUp animate-delay-2">
+        <div className="important-message-content">
+          <span className="important-message-icon">📢</span>
+          <p><strong>Important:</strong> The Xipay token is expected to be listed on Binance by the end of November 2025.</p>
+        </div>
+      </div>
       
       <div className="ico-container">
 
